@@ -1,6 +1,8 @@
 import Menu from "./Menu";
 import { TbHeartQuestion } from "react-icons/tb";
 import Footer from "./Footer";
+import officeImg from "../image/About/office.jpg";
+import clothesImg from "../image/About/clothes.png";
 
 export default function AboutPage() {
   return (
@@ -8,7 +10,7 @@ export default function AboutPage() {
       <Menu />
       <div className="flex flex-col items-center justify-center mb-7">
         <img
-          src="/src/image/About/office.jpg"
+          src={officeImg}
           alt="ofiice"
           className="md:h-[700px] w-full mt-3"
         />
@@ -35,7 +37,7 @@ export default function AboutPage() {
               خاص و رسمی.
             </p>
           </div>
-          <img src="/src/image/About/clothes.png" alt="clothes" className="md:w-[700px] md:h-[700px] w-[300px] h-[300px] rounded-[15px]" />
+          <img src={clothesImg} alt="clothes" className="md:w-[700px] md:h-[700px] w-[300px] h-[300px] rounded-[15px]" />
         </div>
       </div>
       <Footer/>
