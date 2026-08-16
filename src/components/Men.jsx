@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import Footer from "./Footer";
 import { ProductContext } from "./ProductContext";
 import AddtoCart from "./AddtoCart";
+import menBanner from "../image/men/main.jpg";
 
 export default function Men() {
   const [activeTab, setactiveTab] = useState("shirt");
@@ -36,7 +37,7 @@ export default function Men() {
       <Menu />
       <div className="mb-7">
         <img
-          src="./src/image/men/main.jpg"
+          src={menBanner}
           alt="men-banner"
           className="mt-3 w-full"
         />
