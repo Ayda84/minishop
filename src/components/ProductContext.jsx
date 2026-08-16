@@ -1,0 +1,310 @@
+import { createContext, useState } from "react";
+
+export let ProductContext = createContext();
+
+export default function Producrprovider({ children }) {
+  const [products] = useState([
+    {
+      id: 1,
+      img: "/src/image/newproduct/pic1.webp",
+      name: "شومیز کیمونو اطلس A51673",
+      size: "سایز : Free size",
+      description: "قد 70 , عرض 60 , دور بازو 42 , طول آستین 40 سانتی متر",
+      Inventory: "موجود در انبار",
+      price: "830,000",
+      toman: "تومان",
+    },
+    {
+      id: 2,
+      img: "/src/image/newproduct/pic2.webp",
+      name: "شال MK حاشیه خال ریز N21069",
+      size: "",
+      description: "قد 189 , عرض 60 سانتی متر",
+      Inventory: "موجود در انبار",
+      price: "325,000 ",
+      toman: "تومان",
+    },
+    {
+      id: 3,
+      img: "/src/image/newproduct/pic4.webp",
+      name: "تیشرت کریستال رگلان T52008",
+      size: "سایز : XL , 2XL , 3XL",
+      description: "قد 72 , عرض 60 , دور بازو 46 سانتی متر",
+      Inventory: "موجود در انبار",
+      price: "728,000 ",
+      toman: "تومان",
+    },
+    {
+      id: 4,
+      img: "/src/image/Allproducts/pic1.webp",
+      name: "شومیز لینن صبا A31185",
+      size: "سایز : XL , 2XL , 3XL",
+      description: "قد 72 , عرض 60 , دور بازو 46 سانتی متر",
+      Inventory: "موجود در انبار",
+      price: "815,000 ",
+      toman: "تومان",
+    },
+    {
+      id: 5,
+      img: "/src/image/Allproducts/pic2.webp",
+      name: "شومیز ساده لینن A410272",
+      size: "سایز : XL , 2XL , 3XL",
+      description: "قد 72 , عرض 60 , دور بازو 46 سانتی متر",
+      Inventory: "ناموجود",
+      price: "728,000 ",
+      toman: "تومان",
+    },
+    {
+      id: 6,
+      img: "/src/image/Allproducts/pic3.webp",
+      name: "شومیز کادنزا باران A51294",
+      size: "سایز : XL , 2XL , 3XL",
+      description: "قد 72 , عرض 60 , دور بازو 46 سانتی متر",
+      Inventory: "موجود در انبار",
+      price: "785,000 ",
+      toman: "تومان",
+    },
+    {
+      id: 7,
+      img: "/src/image/Allproducts/pic4.webp",
+      name: "شلوارک مردانه الیاف G32625",
+      size: "سایز : XL , 2XL , 3XL",
+      description: "قد 72 , عرض 60 , دور بازو 46 سانتی متر",
+      Inventory: "ناموجود",
+      price: "605,000 ",
+      toman: "تومان",
+    },
+    {
+      id: 8,
+      img: "/src/image/Allproducts/pic5.webp",
+      name: "شومیز ساتن الیزه یارا A51419",
+      size: "سایز : XL , 2XL , 3XL",
+      description: "قد 72 , عرض 60 , دور بازو 46 سانتی متر",
+      Inventory: "موجود در انبار",
+      price: "755,000 ",
+      toman: "تومان",
+    },
+    {
+      id: 9,
+      img: "/src/image/Allproducts/pic6.webp",
+      name: "تیشرت لش باکسی T31498",
+      size: "سایز : XL , 2XL , 3XL",
+      description: "قد 72 , عرض 60 , دور بازو 46 سانتی متر",
+      Inventory: "ناموجود",
+      price: "528,000 ",
+      toman: "تومان",
+    },
+  ]);
+
+  const shomizes = [
+    {
+      id: 1,
+      img: "/src/image/women/pic2.jpg",
+      name: "شومیز آستین بلند یقه برگردان زنانه ",
+      price: "۳,۲۸۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 2,
+      img: "/src/image/women/pic3.jpg",
+      name: "شومیز آستین بلند یقه برگردان",
+      price: "۲,۴۹۸,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 3,
+      img: "/src/image/women/pic4.jpg",
+      name: "کراپ شومیز آستین بلند یقه برگردان",
+      price: "۲,۹۸۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "ناموجود",
+    },
+    {
+      id: 4,
+      img: "/src/image/women/pic5.jpg",
+      name: "کراپ شومیز آستین بلند یقه برگردان",
+      price: "۳,۲۵۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 5,
+      img: "/src/image/women/pic6.jpg",
+      name: "کراپ شومیز آستین بلند یقه برگردان",
+      price: "۵,۲۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 6,
+      img: "/src/image/women/pic7.jpg",
+      name: "کراپ شومیز آستین بلند یقه برگردان",
+      price: "۳,۵۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+  ];
+
+  const pantsWomen = [
+    {
+      id: 1,
+      img: "/src/image/women/pic-1.jpg",
+      name: "شلوار جین اسکینی زنانه اسمارا مدل",
+      price: "۴,۰۳۰,۹۵۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 2,
+      img: "/src/image/women/pic-2.jpg",
+      name: "شلوار جین اسکینی زنانه اسمارا مدل",
+      price: "۱,۰۶۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 3,
+      img: "/src/image/women/pic-3.jpg",
+      name: "شلوار جین اسکینی زنانه اسمارا مدل",
+      price: "۱,۹۹۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 4,
+      img: "/src/image/women/pic-4.jpg",
+      name: "شلوار جین اسکینی زنانه اسمارا مدل",
+      price: "۱,۱۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 5,
+      img: "/src/image/women/pic-5.jpg",
+      name: "شلوار جین اسکینی زنانه اسمارا مدل",
+      price: "۲,۰۵۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 6,
+      img: "/src/image/women/pic-6.jpg",
+      name: "شلوار جین اسکینی زنانه اسمارا مدل",
+      price: "۳,۵۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "ناموجود",
+    },
+  ];
+
+  const shirts = [
+    {
+      id: 1,
+      img: "/src/image/men/pic1.jpg",
+      name: "تی‌شرت آستین کوتاه یقه گرد مردانه",
+      price: "۳,۵۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 2,
+      img: "/src/image/men/pic2.jpg",
+      name: "تی‌شرت آستین کوتاه یقه گرد مردانه",
+      price: "۳,۲۸۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 3,
+      img: "/src/image/men/pic3.jpg",
+      name: "تی‌شرت آستین کوتاه یقه گرد مردانه",
+      price: "۲,۴۹۸,۰۰۰",
+      toman: "تومان",
+      Inventory: "ناموجود",
+    },
+    {
+      id: 4,
+      img: "/src/image/men/pic4.jpg",
+      name: "تی‌شرت آستین کوتاه یقه گرد مردانه",
+      price: "۲,۹۸۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 5,
+      img: "/src/image/men/pic5.jpg",
+      name: "تی‌شرت آستین کوتاه یقه گرد مردانه",
+      price: "۳,۲۵۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 6,
+      img: "/src/image/men/pic6.jpg",
+      name: "تی‌شرت آستین کوتاه یقه گرد مردانه",
+      price: "۵,۲۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+  ];
+
+  const pantsMen = [
+    {
+      id: 1,
+      img: "/src/image/men/pic-1.jpg",
+      name: "شلوار راسته مردانه ال سی وایکیکی ",
+      price: "۴,۰۳۰,۹۵۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 2,
+      img: "/src/image/men/pic-2.jpg",
+      name: "شلوار راسته مردانه ال سی وایکیکی ",
+      price: "۱,۰۶۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 3,
+      img: "./src/image/men/pic-3.jpg",
+      name: "شلوار راسته مردانه ال سی وایکیکی ",
+      price: "۱,۹۹۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 4,
+      img: "/src/image/men/pic-4.jpg",
+      name: "شلوار راسته مردانه ال سی وایکیکی ",
+      price: "۱,۱۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 5,
+      img: "/src/image/men/pic-5.jpg",
+      name: "شلوار راسته مردانه ال سی وایکیکی ",
+      price: "۲,۰۵۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+    {
+      id: 6,
+      img: "/src/image/men/pic-6.jpg",
+      name: "شلوار راسته مردانه ال سی وایکیکی ",
+      price: "۳,۵۰۰,۰۰۰",
+      toman: "تومان",
+      Inventory: "موجود در انبار",
+    },
+  ];
+
+  return (
+    <ProductContext.Provider
+      value={{ products, shomizes, pantsWomen, shirts, pantsMen }}
+    >
+      {children}
+    </ProductContext.Provider>
+  );
+}

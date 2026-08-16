@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maintext: #ca6180;
+  --color-second: #fcb7c7;
+  --color-three: #fefd99;
+  --color-four: #9ed3dc;
+
+  /* //font */
+  --font-sans: iran;
+}
+
+@font-face {
+  font-family: iran;
+  src: url("../src/fonts/IRANSans.eot");
+  src: url("../src/fonts/IRANSans.ttf");
+  src: url("../src/fonts/IRANSans.woff");
+  src: url("../src/fonts/IRANSans.woff2");
+}
+
+.swiper-pagination-bullet {
+  background: #fefd99 !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #9ed3dc !important;
+  width: 45px;
+  border-radius: 25px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fefd99 !important;
+  font-size: 12px;
+}
+
+html {
+  overflow-y: scroll;
+}
