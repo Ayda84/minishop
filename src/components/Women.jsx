@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import Footer from "./Footer";
 import { ProductContext } from "./ProductContext";
 import AddtoCart from "./AddtoCart";
+import womenBanner from "../image/women/pic1.webp";
 
 export default function Women() {
   const [activeTab, setactiveTab] = useState("shomiz");
@@ -36,7 +37,7 @@ export default function Women() {
       <Menu />
       <div className="mb-7">
         <img
-          src="./src/image/women/pic1.webp"
+          src={womenBanner}
           alt="women-banner"
           className="mt-3 w-full"
         />
