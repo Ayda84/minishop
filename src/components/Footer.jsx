@@ -1,5 +1,7 @@
 import { FaPhoneVolume } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import namad1 from "../image/Footer/pic1.png";
+import namad2 from "../image/Footer/pic2.png";
 
 export default function Footer() {
   return (
@@ -49,12 +51,12 @@ export default function Footer() {
         <div className="flex flex-row items-center justify-center mt-4 gap-2">
           <img
             className="md:w-[100px] md:h-[120px] w-[70px] h-[70px]"
-            src="/src/image/Footer/pic1.png"
+            src={namad1}
             alt="namad"
           />
           <img
             className="md:w-[100px] md:h-[120px] w-[70px] h-[70px]"
-            src="/src/image/Footer/pic2.png"
+            src={namad2}
             alt="namad"
           />
         </div>
