@@ -6,7 +6,7 @@ import { AuthContext } from "./AuthContext";
 import CartIcon from "./CartIcon";
 import { FaRegUser } from "react-icons/fa6";
 import SearchBar from "./SearchBar";
-import topBanner from "./image/top-banner-web.gif";
+import topBanner from "/image/top-banner-web.gif";
 
 export default function Menu() {
   const { islogged } = useContext(AuthContext);
