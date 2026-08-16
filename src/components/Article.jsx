@@ -1,22 +1,26 @@
 import { Link } from "react-router-dom";
+import maghalePic1 from "../image/maghale/pic1.webp";
+import maghalePic2 from "../image/maghale/pic2.webp";
+import maghalePic3 from "../image/maghale/pic3.webp";
+import maghalePic4 from "../image/maghale/pic4.webp";
 
 export default function Article() {
   const articlesData = [
     {
       id: 1,
-      img: "./src/image/maghale/pic1.webp",
+      img: maghalePic1,
     },
     {
       id: 2,
-      img: "./src/image/maghale/pic2.webp",
+      img: maghalePic2,
     },
     {
       id: 3,
-      img: "./src/image/maghale/pic3.webp",
+      img: maghalePic3,
     },
     {
       id: 4,
-      img: "./src/image/maghale/pic4.webp",
+      img: maghalePic4,
     },
   ];
 
