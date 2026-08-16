@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Menu from "./Menu";
+import error404Img from "../image/errorr/error404.png";
 
 export default function NotFound() {
   return (
@@ -7,7 +8,7 @@ export default function NotFound() {
       <Menu />
       <div className="flex flex-col items-center justify-center my-10">
         <img
-          src="/src/image/errorr/error404.png"
+          src={error404Img}
           className="w-[400px] h-[400px] floating-image"
           alt="404"
         />
