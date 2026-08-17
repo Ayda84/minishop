@@ -41,7 +41,7 @@ export default function App() {
       <Producrprovider>
         <AuthProvider>
           <CartProvider>
-            <Router>
+            <Router basename="/minishop/">
               <ScrollToTop />
               <Loading />
               {welcomeName && (
